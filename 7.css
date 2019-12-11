@@ -1,0 +1,676 @@
+/*colors
+black - #0B0C10;
+dgray - #1F2833;
+lgray - #C5C6C7;
+dteal - #45A29E;
+lteal - #66FCF1;
+cream - #F0F4F9*/
+
+
+/*fonts
+h1, h2, h3: 'Cormorant Garamond'
+body: 'Open Sans', Lato, sans-serif;*/
+
+
+body {
+	margin: 0 auto;
+	font-family: 'Open Sans', Arial;
+	/*font-size: 0.8rem;*/
+}
+
+.zone {
+	cursor: default;
+	margin-bottom: 0.5rem;
+	border-radius: 1px;
+	border: 1px solid black; 
+	font-size: 0.8rem;
+	color: #0B0C10;
+}
+
+p {
+	margin-top: -15px;
+}
+
+
+
+/*1. navbar*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px;
+	font-size: 0.85rem;
+	background-color: #1F2833;
+}
+
+.ul {
+	margin-right: 8rem;
+}
+
+.links {
+	display: flex;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.links:hover {
+	background-color: #45A29E;
+	transition-duration: 1.2s;
+}
+
+a {
+	text-decoration: none;
+	color: #F0F4F9;
+}
+
+.logo {
+	height: 6rem;
+	width: 6rem;
+	margin-left: 5rem;
+	margin-top: -1.5rem;
+	margin-bottom: -1.5rem;
+}
+
+
+/*2. cover*/
+
+.cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.image {
+	flex-basis: 100%;
+	height: 95vh;
+	filter: brightness(60%);
+}
+
+.header {
+	position: absolute;
+	text-align: center;
+	font-size: 0.9rem;
+	margin: 1rem 15rem 0 15rem;
+	/*padding: 1rem 15rem 0 15rem;*/
+	color: #F0F4F9;
+}
+
+.btn {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	margin-left: 19rem;
+	margin-right: 19rem;
+}
+
+.btn1,.btn2 {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.8rem;
+	border: 1px solid;
+	border-color: #F0F4F9;
+	border-radius: 2px;
+	/*text-decoration: none;*/
+	color: #F0F4F9;
+	transition: 0.1s
+}
+
+.btn1 {
+	background-color: #C5C6C7;
+}
+
+.btn2 {
+	background-color: #66FCF1;
+}
+
+.btn1:hover {
+	transform: scale(1.01);
+}
+
+.btn2:hover {
+	background-color: #45A29E;
+	transform: scale(1.01);
+}
+
+
+/*3. value*/
+
+.values {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.7rem;
+	background-color: #1F2833;
+	/*margin: auto;*/
+	/*max-width: 900px;*/
+	/*justify-content: space-around;*/
+}
+
+.value {
+	text-align: center;
+	/*font-size: 0.8rem;*/
+	margin: 0.5rem 3rem 0.5rem 3rem;
+	color: #F0F4F9;
+}
+
+.value i {
+	color: #45A29E;
+	font-size: 1.1rem;
+}
+
+.value h3 {
+	margin-top: 10px;
+	/*font-weight: 700;*/
+	/*text-transform: uppercase;*/
+}
+
+.value p {
+	/*margin-top: -10px;*/
+	/*margin-bottom: 10px;*/
+}
+
+
+/*4. about us*/
+
+.guide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eimage {
+	flex-basis: 100%;
+	height: 70vh;
+	filter: brightness(20%);
+}
+
+.empathy {
+	position: absolute;
+	display: flex;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem 9rem 2rem 5rem;
+	color: #F0F4F9;
+}
+
+.empathy1 {
+	max-width: 35rem;
+	padding: 0 7rem 0 0;
+	font-size: 0.9rem;
+	/*margin: 0 4rem 3rem 0;*/
+}
+
+.empathy2 {
+	font-size: 0.9rem;
+	margin-right: -3rem;
+}
+
+.empathy2>p {
+	margin-top: -10px
+}
+
+
+/*5. testimonials*/
+
+.backtest {
+	background-color: #1F2833;
+}
+
+.testheading {
+	text-align: center;
+	color: #F0F4F9;
+}
+
+.testborder {
+	width: 255px;
+	height: 3px;
+	background-color: #45A29E;
+	margin: auto;
+	margin-top: -10px;
+}
+
+.tests {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	font-size: 0.8rem;
+	/*margin-top: -1rem;*/
+	/*background-color: #1F2833;*/
+}
+
+.test1 {
+	background-color: #C5C6C7;
+	max-width: 40rem;
+	padding: 1rem;
+	margin: 0.1rem 0 0.8rem 5rem;
+	border-radius: 2px;
+	border: 1px solid #F0F4F9;
+}
+
+.test2 {
+	align-self: flex-end;
+	background-color: #C5C6C7;
+	max-width: 40rem;
+	min-width: 40rem;
+	padding: 1rem;
+	margin: 0.1rem 3rem 0.8rem 0;
+	border-radius: 2px;
+	border: 1px solid #F0F4F9;
+}
+
+.timage {
+	height: 4rem;
+	width: 4rem;
+	border: 2px solid #F0F4F9;
+	border-radius: 50%;
+}
+
+.nexto {
+	display: flex;
+}
+
+.testnames {
+	margin-left: 1rem;
+	margin-top: -1.2rem;
+}
+
+.testpar {
+	font-style: italic;
+	text-align: center;
+	margin-top: -0.3rem;
+	margin-left: -0.5rem;
+}
+
+
+/*6. Plan*/
+
+.planname {
+	text-align: center;
+}
+
+.plans {
+	display: flex;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: auto;
+}
+
+.plan {
+	text-align: center;
+	font-size: 0.85rem;
+	margin-bottom: 2rem;
+}
+
+.plan img {
+	height: 15vh;
+}
+
+
+/*7. Trust*/
+
+.backtrust {
+	background-color: #1F2833;
+}
+
+.trustname {
+	text-align: center;
+	color: #C5C6C7;
+}
+
+.trust {
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	padding: 0.7rem;
+	margin-left: 2rem;
+	color: #C5C6C7;
+}
+
+.tru {
+	text-align: center;
+	margin: 0.2rem 4rem 0.5rem 4rem;
+}
+
+.tru i {
+	font-size: 1.2rem;
+}
+
+.tru p {
+	margin-top: 1rem;
+	text-transform: uppercase;
+}
+
+
+/*8. Story*/
+
+.story {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.storytext {
+	max-width: 23rem;
+	text-align: center;
+	padding: 1rem 0 2rem 0;
+}
+
+/*.storytext h2 {
+	text-align: center;
+}*/
+
+
+/*9. Plans*/
+
+.backplan {
+	background-color: #1F2833;
+}
+
+.plansheader {
+	text-align: center;
+	color: #F0F4F9;
+}
+
+.plansborder {
+	width: 175px;
+	height: 3px;
+	background-color: #45A29E;
+	margin: auto;
+	margin-top: -10px;
+}
+
+.priceplans { /*all plans*/
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
+	margin: 0rem 10rem 0 10rem;
+}
+
+.priceplan { /*each plan*/
+	text-align: center;
+	padding-bottom: 1rem;
+	border: 1px solid;
+	border-color: #1F2833;
+	border-radius: 3px;
+	color: #1F2833;
+	transition: 0.1s;
+	background-color: #F0F4F9;
+}
+
+.priceplan:hover {
+	transform: scale(1.01);
+}
+
+.planssub { /*plan header*/
+	background-color: #C5C6C7;
+	color: #1F2833;
+	padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+	margin-top: 0;
+}
+
+.prices { /*plan price*/
+	color: #66FCF1;
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+}
+
+.pbtn { /*button*/
+	margin-top: 1rem;
+	padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+	/*border: 1px solid;*/
+	/*border-color: #F0F4F9;*/
+	border-radius: 2px;
+	color: #F0F4F9;
+	background-color: #66FCF1;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.pbtn:hover {
+	background-color: #45A29E;
+}
+
+
+.pricebar { /*ul*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.pbs { /*li*/
+	display: flex;
+	margin-bottom: 0.3rem;
+	text-align: center;
+}
+
+.border {
+	width: 6rem;
+	height: 2px;
+	background-color: #C5C6C7;
+	margin-right: 3rem;
+	margin-bottom: 0.3rem;
+	/*margin: auto;*/
+	/*margin-top: -10px;*/
+}
+
+
+/*10. Success*/
+
+.success {
+	display: flex;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+}
+
+.sucimage {
+	height: 75vh;
+	width: 100%;
+	filter: brightness(40%);
+}
+
+
+
+/*11. Our team*/
+
+.teamback {
+	background-color: #1F2833;
+}
+
+.teamHeading {
+	text-align: center;
+	color: #F0F4F9;
+}
+
+.teamborder {
+	width: 170px;
+	height: 3px;
+	background-color: #45A29E;
+	margin: auto;
+	margin-top: -10px;
+}
+
+.team {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1100px;
+	margin: auto;
+	padding: 1rem;
+	/*font-size: 0.8rem;*/
+}
+
+.indv {
+	text-align: center;
+	font-size: 0.75rem;
+	margin: 1rem;
+	padding: 1rem 0.5rem;
+	background-color: #F0F4F9;
+	color: black;
+	border-radius: 3px;
+	border: 1px solid;
+/*	display: flex;
+	flex-direction: column;*/
+}
+
+.indv img {
+	height: 25vh;
+	border-radius: 1px;
+	margin-bottom: -0.5rem;
+	/*width: 60%;*/
+}
+
+.indv h4 {
+	margin-top: -5px;
+}
+
+.indv p {
+	margin-top: -5px;
+}
+
+
+/*12. Contact us*/
+
+.contback {
+	background-color: #1F2833;
+}
+
+.contactHeading {
+	text-align: center;
+	color: #F0F4F9;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	margin-top: -1.5rem;
+	/*justify-content: center;*/
+}
+
+.form {
+	flex-basis: 50%;
+	margin: 2rem;
+	padding: 1rem;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	background-color: #F0F4F9;
+	color: black;
+}
+
+.group {
+	margin: 0.5rem;
+	/*display: inline-block;*/ /*if wanted horizontally placed*/
+}
+
+.group label {
+	display: block;
+}
+
+.group input {
+	/*border: #CD950C 1px solid;*/
+}
+
+.group textarea {
+	width: 100%;
+	/*border: #CD950C 1px solid;*/
+}
+
+.btnform {
+	background-color: white;
+	/*border: #CD950C 1px solid;*/
+	/*width: 100%;*/
+}
+
+.btnform:hover {
+	cursor: pointer;
+}
+
+.addback {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 28rem;
+	padding: 1.5rem;
+	border-radius: 2px;
+	background-color: #F0F4F9;
+	/*height: 12rem;*/
+}
+
+.address {
+	font-size: 0.75rem;
+	color: black;
+	margin-right: 0.5rem;
+}
+
+.map {
+	height: 13rem;
+	flex-basis: 75%;
+	border-radius: 2px
+	/*margin-left: 2rem;*/
+	/*align-self: center;*/
+	/*margin: 2rem;*/
+}
+
+
+/*13. Footer*/
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1F2833;
+	color: #F0F4F9;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+	min-width: 400px;
+	/*justify-content: space-around;*/
+}
+
+.flogo {
+	height: 4rem;
+	width: 4rem;
+	margin-right: 2.5rem;
+	border-right: white 2px solid;
+	padding-right: 2.5rem;
+	border-color: #45A29E;
+
+}
+
+.icons {
+	font-size: 1.3rem;
+/*	display: flex;
+	justify-content: space-between;*/
+}
+
+.icons i {
+	margin-right: 0.5rem;
+}
+
+.icons i:hover {
+	color: #45A29E;
+}
+
+.trade {
+	margin-right: 2rem;
+	font-size: 0.7rem;
+}
+
+
+
+/*btn in cover is column so stretched in its parent cover image,
+margins used to shorted it, same doesn't apply here so it's smaller.
+can use separate class and copy properties then add onto to make it longer (block)*/
+
